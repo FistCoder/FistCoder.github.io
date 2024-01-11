@@ -17,6 +17,7 @@ body {
   color: #EAEAEA;
   font-family: Jacques;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -116,59 +117,104 @@ body {
 .main {
   width: 100%;
   transition: filter linear 150ms;
+  scroll-behavior: smooth;
 }
-.main_hero {
+.main_parallax {
+  position: relative;
+}
+.main_parallax_hero {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: #2C2C2C;
   height: 88vh;
+  position: sticky;
+  top: 12vh;
+  z-index: 1;
 }
-.main_hero_magazine {
+.main_parallax_hero_magazine {
   position: relative;
 }
-.main_hero_magazine_image {
+.main_parallax_hero_magazine_image {
   position: relative;
   rotate: 14deg;
   z-index: 3;
   border: 4px solid #AF3800;
   border-style: dashed;
-  width: 20vw;
+  height: 50vh;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   pointer-events: none;
 }
-.main_hero_magazine_card {
+.main_parallax_hero_magazine_card {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
-.main_hero_magazine_card--dark {
+.main_parallax_hero_magazine_card--dark {
   rotate: 18deg;
   background: #AF3800;
   z-index: 2;
   filter: blur(1px);
 }
-.main_hero_magazine_card--light {
+.main_parallax_hero_magazine_card--light {
   rotate: 22deg;
   background: #FE621D;
   z-index: 1;
   filter: blur(2px);
 }
-.main_section {
+.main_parallax_section {
   display: flex;
-  height: 88vh;
+  height: 100vh;
   justify-content: space-around;
   padding: 5rem;
   font-size: 5rem;
+  position: relative;
+  overflow: hidden;
+  top: 6vh;
+  padding-bottom: 10rem;
+}
+.main_parallax_section_title {
   color: #EAEAEA;
 }
-.main_section--one {
-  background: #AF3800;
-}
-.main_section_year {
+.main_parallax_section_year {
   align-self: flex-end;
   color: #D9D9D9;
+}
+.main_parallax_section_text {
+  font-size: 2rem;
+  max-width: 30rem;
+  text-align: center;
+  align-self: flex-end;
+  color: #D9D9D9;
+}
+.main_parallax_section_video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+.main_parallax_section--divider {
+  height: 15vh;
+  background: #AF3800;
+}
+.main_parallax_section--one {
+  background: #AF3800;
+  position: sticky;
+  z-index: 2;
+}
+.main_parallax_section--opera {
+  background: #AF3800;
+  position: sticky;
+  z-index: 3;
+}
+.main_parallax_section--div1 {
+  z-index: 4;
+}
+.main_parallax_section--rock {
+  background: #FE621D;
+  z-index: 5;
 }/*# sourceMappingURL=style.css.map */

@@ -33,6 +33,7 @@ body
   color: $light
   font-family: Jacques
   overflow-x: hidden
+  scroll-behavior: smooth
 
 // navbar !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .navbar
@@ -139,59 +140,108 @@ body
 
 .main
   width: 100%
-  transition: filter linear 150ms 
+  transition: filter linear 150ms
+  scroll-behavior: smooth
+  &_parallax
+    position: relative
 
-  &_hero
-    display: flex
-    justify-content: space-around
-    align-items: center
-    background: $dark
-    height: 88vh
+    &_hero
+      display: flex
+      justify-content: space-around
+      align-items: center
+      background: $dark
+      height: 88vh
+      position: sticky
+      top: 12vh
+      z-index: 1
 
-    &_magazine
-      position: relative
-      // height: 100%
-      // width: 50%
-
-      &_image
+      &_magazine
         position: relative
-        rotate: 14deg
-        z-index: 3
-        border: 4px solid $darkOrange
-        border-style: dashed
-        width: 20vw
-        user-select: none
-        pointer-events: none
+        // height: 100%
+        // width: 50%
 
-      &_card
+        &_image
+          position: relative
+          rotate: 14deg
+          z-index: 3
+          border: 4px solid $darkOrange
+          border-style: dashed
+          height: 50vh
+          user-select: none
+          pointer-events: none
+
+        &_card
+          position: absolute
+          top: 0
+          width: 100%
+          height: 100%
+
+          &--dark
+            rotate: 18deg
+            background: $darkOrange
+            z-index: 2
+            filter: blur(1px)
+
+          &--light
+            rotate: 22deg
+            background: $lightOrange
+            z-index: 1
+            filter: blur(2px)
+
+    &_section
+      display: flex
+      height: 100vh
+      justify-content: space-around
+      padding: 5rem
+      font-size: 5rem
+      position: relative
+      overflow: hidden
+      top: 6vh
+      padding-bottom: 10rem 
+
+      &_title
+        color: $light
+
+      &_year
+        align-self: flex-end
+        color: $grey
+
+      &_text
+        font-size: 2rem
+        max-width: 30rem
+        text-align: center
+        align-self: flex-end
+        color: $grey
+
+      &_video
         position: absolute
-        top: 0
-        width: 100%
-        height: 100%
+        right: 0
+        bottom: 0
+        z-index: -1
+        opacity: .8
 
-        &--dark
-          rotate: 18deg
-          background: $darkOrange
-          z-index: 2
-          filter: blur(1px)
+      &--divider
+        height: 15vh
+        background: $darkOrange
 
-        &--light
-          rotate: 22deg
-          background: $lightOrange
-          z-index: 1
-          filter: blur(2px)
+      &--one
+        background: $darkOrange
+        position: sticky
+        z-index: 2
 
-  &_section
-    display: flex
-    height: 88vh
-    justify-content: space-around
-    padding: 5rem
-    font-size: 5rem
-    color: $light
+      &--opera
+        background: $darkOrange
+        position: sticky
+        z-index: 3
 
-    &--one
-      background: $darkOrange
-    &_year
-      align-self: flex-end
-      color: $grey
-  // border style dashed for the magazine
+      &--div1
+        z-index: 4
+
+      &--rock
+        // background: url(assets/images/backgrounds/rock.jpg)
+        background: $lightOrange
+        z-index: 5
+
+
+
+    // border style dashed for the magazine
