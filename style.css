@@ -170,18 +170,19 @@ body {
   height: 100vh;
   justify-content: space-around;
   padding: 5rem;
-  font-size: 5rem;
-  position: relative;
+  position: sticky;
   overflow: hidden;
   top: 6vh;
   padding-bottom: 10rem;
 }
 .main_parallax_section_title {
+  font-size: 5rem;
   color: #EAEAEA;
 }
 .main_parallax_section_year {
   align-self: flex-end;
   color: #D9D9D9;
+  font-size: 5rem;
 }
 .main_parallax_section_text {
   font-size: 2rem;
@@ -190,12 +191,12 @@ body {
   align-self: flex-end;
   color: #D9D9D9;
 }
-.main_parallax_section_video {
+.main_parallax_section_media {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .main_parallax_section--divider {
   height: 15vh;
@@ -203,18 +204,37 @@ body {
 }
 .main_parallax_section--one {
   background: #AF3800;
-  position: sticky;
   z-index: 2;
 }
 .main_parallax_section--opera {
   background: #AF3800;
-  position: sticky;
   z-index: 3;
 }
 .main_parallax_section--div1 {
   z-index: 4;
 }
-.main_parallax_section--rock {
-  background: #FE621D;
+.main_parallax_section--baroque {
+  background: #AF3800;
   z-index: 5;
+}
+.main_parallax_section--div2 {
+  z-index: 6;
+}
+.main_parallax_section--gospel {
+  background: #AF3800;
+  z-index: 7;
+}
+.main_parallax_section--div3 {
+  z-index: 8;
+}
+.main_parallax_section--classical {
+  background: #AF3800;
+  z-index: 9;
+}
+.main_parallax_section--div4 {
+  z-index: 10;
+}
+.main_parallax_section--romantic {
+  z-index: 11;
+  background: #AF3800;
 }/*# sourceMappingURL=style.css.map */
