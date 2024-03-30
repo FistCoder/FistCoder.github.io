@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/icon/site.webmanifest">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>Music Timeline</title>
 </head>
-<!-- DONT FORGET TO DELETE ALL THE "" classes """ctrl F""" -->
 
 <body id="body">
   <nav class="navbar ">
@@ -28,6 +31,7 @@
     </div>
     <div class="navbar_menu  blur" id="sideMenu" data-toggle="closed">
       <!-- the menu itself -->
+      <div class="navbar_menu_divider"></div>
       <div class="navbar_menu_title"> <span>Chose the Era you are interested in</span></div>
       <div class="navbar_menu_divider"></div>
       <div class="navbar_menu_links">
@@ -47,12 +51,13 @@
     </div>
   </nav>
   <main class="main" id="main">
-    < div class="main_parallax">
+    <div class="main_parallax">
       <hero class="main_parallax_hero">
         <div class="main_parallax_hero_text">
+          <!-- une cacophonie avec les br mais pas envie de refaire -->
           <p>
             Over the years the music has changed very much <br>
-            Never before we have seen so many choices, <br>
+            Never before we have seen so many choices <br>
             from <span class="soft-text">calming and relaxing</span> <br>
             to <span class="hard-text">aggressive and loud</span><br>
             and everything in between <br>
@@ -217,7 +222,7 @@
       -->
 
 
-    </>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>

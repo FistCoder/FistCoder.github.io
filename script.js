@@ -24,15 +24,15 @@ function menuToggle() {
   if (menu.getAttribute("data-toggle") == "closed") {
     /* execute if the menu is closed */
     menu.setAttribute("data-toggle", "open");
-    burger.style.left = "0";
-    menu.style.left = "calc(100% / 3 * 2)";
+    // burger.style.left = "0";
+    menu.style.left = "0";
     main.classList.toggle("blur");
     menu.classList.toggle("blur");
     console.log("opened");
   } else if (menu.getAttribute("data-toggle") == "open") {
     /* execute if the menu is open */
     menu.setAttribute("data-toggle", "closed");
-    burger.style.left = "calc(100% - 10vh)";
+    // burger.style.left = "calc(100% - 10vh)";
     menu.style.left = "105%";
     main.classList.toggle("blur");
     menu.classList.toggle("blur");
