@@ -183,7 +183,6 @@ body {
   border: 4px solid #AF3800;
   border-style: dashed;
   height: 34vh;
-  aspect-ratio: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
