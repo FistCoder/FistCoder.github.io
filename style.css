@@ -249,7 +249,6 @@ body {
   font-size: clamp(1.8rem, 5vw, 5rem);
   color: #EAEAEA;
   margin-bottom: 1rem;
-  pointer-events: none;
 }
 .main_parallax_section_year {
   align-self: auto;
@@ -267,7 +266,6 @@ body {
   text-align: start;
   align-self: auto;
   color: #D9D9D9;
-  pointer-events: none;
 }
 @media screen and (min-width: 1000px) {
   .main_parallax_section_text {
