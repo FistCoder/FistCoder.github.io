@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global QR Code Generator</title>
+  <link rel="stylesheet" href="reset.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 class="title">Générateur de QR code Global</h1>
+
+    <div class="how">
+
+      <h2>Comment ça fonctionne:</h2>
+      <p> 
+        1. Entrez l'URL : Saisissez l'URL de l'article JW.ORG dans le champ. <br>
+        2. Générez le QR Code : Cliquez sur le bouton pour créer le QR code correspondant à l'URL. <br>
+        3. Téléchargez le PDF : Après avoir vu le QR code, un autre bouton apparaît pour vous permettre de télécharger un PDF avec le QR code. <br>
+        
+        C'est un moyen simple de créer et télécharger un QR code en quelques clics.</p>
+      </div>
+
+      <div>
+
+        <label for="url">Insérer l'URL de votre article:</label>
+        <br>
+        <input id="url" name="url" type="url">
+        <input type="submit" id="button" value="Génerer le QR Code">
+      </div>
+
+    <div id="image_cont"></div>
+  </div>
+</body>
+
+<script src="script.js">
+
+</script>
+
+</html>
